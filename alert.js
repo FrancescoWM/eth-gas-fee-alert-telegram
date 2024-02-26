@@ -41,3 +41,4 @@ async function checkGasPriceAndAlert() {
 }
 
 setInterval(checkGasPriceAndAlert, 60000);
+

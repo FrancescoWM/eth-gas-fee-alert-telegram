@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@cicciocoin/ethereum-gas": "^1.0.3",
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.5",
+    "web3": "^4.5.0"
+  }
+}

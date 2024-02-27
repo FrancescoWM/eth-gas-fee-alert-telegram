@@ -4,6 +4,7 @@
   "description": "This project is a simple Node.js script that checks the current Ethereum gas prices and sends an alert message via Telegram when the price exceeds a predefined threshold.",
   "main": "gasAlert.js",
   "dependencies": {
+    "@cicciocoin/ethereum-gas":"1.0.3",
     "abitype": "^0.7.1",
     "asynckit": "^0.4.0",
     "available-typed-arrays": "^1.0.7",

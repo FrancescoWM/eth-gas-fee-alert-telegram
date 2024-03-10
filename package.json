@@ -1,6 +1,6 @@
 {
   "name": "@cicciocoin/eth-gas-fee-alert-telegram",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "This project is a simple Node.js script that checks the current Ethereum gas prices and sends an alert message via Telegram when the price exceeds a predefined threshold.",
   "main": "gasAlert.js",
   "dependencies": {

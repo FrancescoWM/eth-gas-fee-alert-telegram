@@ -5,7 +5,7 @@
   "main": "gasAlert.js",
   "dependencies": {
     "@cicciocoin/ethereum-gas": "1.0.3",
-    "@ciccicioin/ethereum-block-number": "1.0.1",
+    "@cicciocoin/ethereum-block-number": "1.0.1",
     "abitype": "^0.7.1",
     "asynckit": "^0.4.0",
     "available-typed-arrays": "^1.0.7",

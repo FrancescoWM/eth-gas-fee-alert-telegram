@@ -6,6 +6,7 @@ const RPC_URL = process.env.RPC_URL;
 
 const axios = require('axios');
 const ethereumGas = require('@cicciocoin/ethereum-gas');
+const ethereumBlockNumber = require('@cicciocoin/ethereum-block-number');
 
 // Function to send a message to Telegram
 function sendTelegramMessage(message) {
@@ -37,6 +38,19 @@ async function checkGasPriceAndAlert() {
         }
     } catch (error) {
         console.error(`Failed to fetch Ethereum gas price: ${error.message}`);
+    }
+}
+
+async function checkBlockNumberAlert() {
+    try {
+        const blockNumber = await ethereumBlockNumber(RPC_URL);
+
+        console.log(`Current Ethereum Block Number is: ${blockNumber}`);
+
+        sendTelegramMessage(`Alert: The current block number is: ${blockNumber}.`);
+
+    } catch (error) {
+        console.error(`Failed to fetch Ethereum block number: ${error.message}`);
     }
 }
 
